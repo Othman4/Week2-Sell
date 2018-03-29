@@ -1,0 +1,16 @@
+#!  /bin/bash
+
+carmodel=3
+
+check=$(( ${RANDOM} * ${carmodel} / 963254 + 1 ))
+
+if [ ${check} == 1 ]; then
+    echo "The Answer is : Rolls-Royce-1 -- if"
+elif [ ${check} == 2 ]; then
+    echo "The Answer is : Mercedes-2 -- if"
+else
+    echo "The Answer is : Volvo-3 -- if"
+fi
+
+
+## sed -i 's/\r$//' filename
